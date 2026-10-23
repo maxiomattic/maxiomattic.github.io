@@ -1,0 +1,35 @@
+title: Noah Hamm
+description: Computing science student at Trinity Western University, headed for public policy.
+url: https://maxiomattic.github.io
+author:
+  name: Noah Hamm
+  email: noah.hamm@protonmail.com
+links:
+  email: mailto:noah.hamm@protonmail.com
+  linkedin: https://www.linkedin.com/in/noah-hamm-a9069438b/
+  github: https://github.com/maxiomattic
+permalink: /writing/:year/:title/
+markdown: kramdown
+kramdown:
+  input: GFM
+  smart_quotes: ["apos", "apos", "quot", "quot"]
+plugins:
+  - jekyll-feed
+feed:
+  path: feed.xml
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - tools/
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: drafts
+    values:
+      layout: post

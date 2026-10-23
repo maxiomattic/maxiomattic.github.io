@@ -1,0 +1,19 @@
+{% if site.posts.size > 0 %}
+<ol class="log" reversed>
+  {% assign lim = include.limit | default: 1000 %}
+  {% for post in include.posts limit: lim %}
+  <li class="log-entry">
+    <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%Y-%m-%d' }}</time>
+    <div>
+      <h3 class="log-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      {% if post.description %}<p>{{ post.description }}</p>{% endif %}
+    </div>
+  </li>
+  {% endfor %}
+</ol>
+{% else %}
+<div class="empty">
+  <div class="empty-signal" aria-hidden="true"><span></span><span></span><span></span></div>
+  <p>No posts yet. <a href="{{ '/feed.xml' | relative_url }}">Subscribe with RSS</a> to get the first one.</p>
+</div>
+{% endif %}

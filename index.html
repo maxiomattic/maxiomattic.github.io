@@ -1,0 +1,133 @@
+---
+layout: default
+body_class: home
+description: Noah Hamm studies computing science at Trinity Western University and is headed for a career in public policy.
+---
+<section class="hero" aria-labelledby="hero-name">
+  <div class="hero-copy">
+    <p class="hud hud-top"><span>49.14&deg; N 122.60&deg; W</span><span>Langley, BC</span></p>
+    <h1 id="hero-name" class="hero-name">Noah Hamm</h1>
+    <p class="hero-line">I study computing science and I'm headed for public policy. I build things to understand the technology policy will have to govern.</p>
+    <p class="hero-actions">
+      <a class="button" href="#projects">See the projects</a>
+      <a class="button ghost" href="{{ '/writing/' | relative_url }}">Read the writing</a>
+    </p>
+  </div>
+  <div class="hero-art">{% include orrery.svg %}</div>
+</section>
+
+<main id="content">
+  <section class="band now" aria-labelledby="now-title">
+    <header class="band-head">
+      <h2 id="now-title">Now</h2>
+      <p class="band-note"><time datetime="2026-10">October 2026</time></p>
+    </header>
+    <ul class="console">
+      <li class="console-row">
+        <span class="lamp" aria-hidden="true"></span>
+        <span class="console-key">Research</span>
+        <p>Teaching a GAN to conduct an orchestra, in TWU's Applied Research Lab. <a href="#conductor">More</a></p>
+      </li>
+      <li class="console-row">
+        <span class="lamp" aria-hidden="true"></span>
+        <span class="console-key">Volunteer</span>
+        <p>Keeping CareRide running while Belkin House tests it. <a href="#careride">More</a></p>
+      </li>
+      <li class="console-row">
+        <span class="lamp" aria-hidden="true"></span>
+        <span class="console-key">Study</span>
+        <p>Third year of computing science, with law and philosophy on the side.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="band projects" id="projects" aria-labelledby="projects-title">
+    <header class="band-head">
+      <h2 id="projects-title">Projects</h2>
+      <p class="band-note">I pick the problem, the architecture, and the tradeoffs, and I test the results. AI coding agents write the code.</p>
+    </header>
+
+    <article class="project feature" id="careride" aria-labelledby="careride-title">
+      <figure class="project-visual shot">
+        <img src="{{ '/assets/careride.webp' | relative_url }}" alt="CareRide's home screen, showing a scheduled ride from Belkin House to St. Paul's Hospital with the driver confirmed." width="1400" height="759" loading="lazy">
+      </figure>
+      <div class="project-body">
+        <p class="status live">In testing at Belkin House</p>
+        <h3 id="careride-title">CareRide</h3>
+        <p class="project-line">Free rides to appointments. Staff book the ride and a verified volunteer drives it.</p>
+        <dl class="readout">
+          <div><dt>Built in</dt><dd>2 days</dd></div>
+          <div><dt>Runs on</dt><dd>Web, Android</dd></div>
+          <div><dt>For</dt><dd>Salvation Army Belkin House</dd></div>
+        </dl>
+        <p class="project-note">Made at FaithTech HACKVAN 2026. Two teammates and I maintain it as Relay Collective.</p>
+        <p class="project-links">
+          <a class="button" href="https://careride-team-1.careride.workers.dev/">Open the app</a>
+          <a class="button ghost" href="https://github.com/maxiomattic/CareRide-Team-1">Source</a>
+        </p>
+      </div>
+    </article>
+
+    <div class="project-grid">
+      <article class="project" id="fastdrive" aria-labelledby="fastdrive-title">
+        <figure class="project-visual">{% include diagram-fastdrive.svg %}</figure>
+        <div class="project-body">
+          <p class="status">Experiment</p>
+          <h3 id="fastdrive-title">FastDrive</h3>
+          <p class="project-line">A self-hosted Google Drive for our family homelab.</p>
+          <dl class="readout">
+            <div><dt>Sized for</dt><dd>10+ TB</dd></div>
+            <div><dt>Largest file</dt><dd>40 GB</dd></div>
+            <div><dt>Chunk tiers</dt><dd>3</dd></div>
+          </dl>
+          <p class="project-note">Content-defined chunking with BLAKE3, tuned to a profile of our real data. Offline edits keep both copies. Thumbnails are cached by content hash.</p>
+          <ul class="tags" aria-label="Built with"><li>Rust</li><li>Axum</li><li>SQLite</li><li>libcosmic</li></ul>
+          <p class="project-links"><a class="button ghost" href="https://github.com/maxiomattic/fastdrive">Source</a></p>
+        </div>
+      </article>
+
+      <article class="project" id="local-search" aria-labelledby="local-search-title">
+        <figure class="project-visual">{% include diagram-search.svg %}</figure>
+        <div class="project-body">
+          <p class="status">Experiment</p>
+          <h3 id="local-search-title">local-search</h3>
+          <p class="project-line">Search your own photos and documents by meaning, without uploading them.</p>
+          <dl class="readout">
+            <div><dt>Runs on</dt><dd>CPU only</dd></div>
+            <div><dt>Uploaded</dt><dd>Nothing</dd></div>
+          </dl>
+          <ul class="tags" aria-label="Built with"><li>CLIP</li><li>Ollama embeddings</li><li>Qdrant</li></ul>
+          <p class="project-links"><a class="button ghost" href="https://github.com/maxiomattic/local-search">Source</a></p>
+        </div>
+      </article>
+
+      <article class="project" id="conductor" aria-labelledby="conductor-title">
+        <figure class="project-visual">{% include diagram-conductor.svg %}</figure>
+        <div class="project-body">
+          <p class="status live">Research, since September 2026</p>
+          <h3 id="conductor-title">A conductor from audio</h3>
+          <p class="project-line">A GAN animates an orchestra conductor from a recording. I'm adding instrument detection so the conductor cues each section.</p>
+          <p class="project-note">Applied Research Lab, Trinity Western University, with Dr. Herbert Tsang.</p>
+        </div>
+      </article>
+
+      <article class="project" id="chess" aria-labelledby="chess-title">
+        <figure class="project-visual">{% include diagram-chess.svg %}</figure>
+        <div class="project-body">
+          <p class="status">2nd place, TWU Hackathon 2026</p>
+          <h3 id="chess-title">Neural chess engine</h3>
+          <p class="project-line">A chess engine that scores positions with a custom PyTorch neural network.</p>
+          <ul class="tags" aria-label="Built with"><li>PyTorch</li></ul>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="band writing" aria-labelledby="writing-title">
+    <header class="band-head">
+      <h2 id="writing-title">Writing</h2>
+      {% if site.posts.size > 0 %}<p class="band-note"><a href="{{ '/writing/' | relative_url }}">All writing</a></p>{% endif %}
+    </header>
+    {% include post-list.html posts=site.posts limit=5 %}
+  </section>
+</main>

@@ -1,0 +1,38 @@
+<svg class="diagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300" role="img">
+<title>Audio comes in, the model detects which section is playing, and the animated conductor cues it.</title>
+<style>
+.diagram text{font-family:"Martian Mono", ui-monospace, monospace;font-size:12px}
+.diagram .cd-wave{fill:none;stroke:#8FDCEB;stroke-width:1.2;stroke-linejoin:round}
+.diagram .cd-lbl{fill:#96A0C3}
+.diagram .cd-hilbl{fill:#D9B26A}
+.diagram .cd-t{fill:#E9ECF5}
+.diagram .cd-node{fill:#0C1433;stroke:#D9B26A;stroke-width:1.2}
+.diagram .cd-link{fill:none;stroke:#8E7444;stroke-width:1.2}
+.diagram .cd-head{fill:#8E7444}
+.diagram .cd-sec{fill:#0C1433;stroke:#22336B;stroke-width:1.2}
+.diagram .cd-hi{fill:#D9B26A;stroke:#D9B26A;stroke-width:1.2}
+.diagram .cd-star{fill:#E9ECF5}
+.diagram .cd-baton{fill:none;stroke:#E9ECF5;stroke-width:1;stroke-dasharray:3 3}
+@media (prefers-reduced-motion: no-preference){
+@keyframes cd-cue{to{stroke-dashoffset:-6}}
+.diagram .cd-baton{animation:cd-cue 1.6s linear infinite}
+}
+</style>
+<defs><marker id="cd-arr" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto"><path class="cd-head" d="M0 0L8 4L0 8Z"/></marker></defs>
+<polyline class="cd-wave" points="22 102 23.8 101 25.6 103.5 27.4 103.3 29.2 101.7 31 97.8 32.8 105.5 34.6 110.6 36.4 97.1 38.2 97.3 40 115.3 41.8 107.5 43.6 87.5 45.4 100.8 47.2 118.2 49 102.9 50.8 94 52.6 110.7 54.5 110.4 56.3 89.3 58.1 91.4 59.9 115.9 61.7 107.8 63.5 99.7 65.3 105.9 67.1 107.7 68.9 108.6 70.7 89.3 72.5 115 74.3 107.4 76.1 99.6 77.9 93.6 79.7 119.3 81.5 99.1 83.3 97.6 85.1 96.4 86.9 113.7 88.7 91.8 90.5 88.4 92.3 97 94.1 124.9 95.9 92.1 97.7 81.9 99.5 122.3 101.3 120.3 103.1 87.9 104.9 99.4 106.7 110.3 108.5 109.6 110.3 90.5 112.1 99.9 113.9 117 115.7 104.5 117.5 100.2 119.4 115 121.2 114.6 123 91.2 124.8 97 126.6 111.2 128.4 106.8 130.2 90.5 132 97.8 133.8 103.4 135.6 100.7 137.4 100.3 139.2 108.8 141 109.3 142.8 99.5 144.6 97.7 146.4 104 148.2 101.9 150 102"/>
+<text class="cd-lbl" x="86" y="150" text-anchor="middle">audio</text>
+<path class="cd-link" d="M154 102H220" marker-end="url(#cd-arr)"/>
+<rect class="cd-node" x="226" y="82" width="80" height="40" rx="6"/>
+<text class="cd-t" x="266" y="106" text-anchor="middle">gan</text>
+<path class="cd-link" d="M306 102L438.6 150.1" marker-end="url(#cd-arr)"/>
+<path class="cd-sec" d="M400 230.3A96 96 0 0 1 426.9 165.3L462.9 200A46 46 0 0 0 450 231.2Z"/>
+<path class="cd-hi" d="M429.3 162.9A96 96 0 0 1 494.3 136L495.2 186A46 46 0 0 0 464 198.9Z"/>
+<path class="cd-sec" d="M497.7 136A96 96 0 0 1 562.7 162.9L528 198.9A46 46 0 0 0 496.8 186Z"/>
+<path class="cd-sec" d="M565.1 165.3A96 96 0 0 1 592 230.3L542 231.2A46 46 0 0 0 529.1 200Z"/>
+<text class="cd-lbl" x="388.8" y="191.6" text-anchor="end">strings</text>
+<text class="cd-hilbl" x="451.6" y="128.8" text-anchor="middle">winds</text>
+<text class="cd-lbl" x="540.4" y="128.8" text-anchor="middle">brass</text>
+<text class="cd-lbl" x="603.2" y="191.6" text-anchor="start">perc</text>
+<path class="cd-baton" d="M496 232Q488 190 469.2 167.3"/>
+<circle class="cd-star" cx="496" cy="232" r="3.5"/>
+</svg>

@@ -1,0 +1,39 @@
+<svg class="diagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300" role="img">
+<title>Photos go through CLIP and documents through an embedding model; both are indexed in Qdrant on the same computer.</title>
+<style>
+.diagram text{font-family:"Martian Mono", ui-monospace, monospace;font-size:12px}
+.diagram .ds-node{fill:#0C1433;stroke:#22336B;stroke-width:1.2}
+.diagram .ds-q{fill:#0C1433;stroke:#D9B26A;stroke-width:1.2}
+.diagram .ds-rim{fill:none;stroke:#D9B26A;stroke-width:1.2}
+.diagram .ds-link{fill:none;stroke:#8E7444;stroke-width:1.2}
+.diagram .ds-head{fill:#8E7444}
+.diagram .ds-bound{fill:none;stroke:#8FDCEB;stroke-width:1;stroke-dasharray:4 4}
+.diagram .ds-ion{fill:#8FDCEB}
+.diagram .ds-t{fill:#E9ECF5}
+.diagram .ds-muted{fill:#96A0C3}
+.diagram .ds-cloud{fill:none;stroke:#96A0C3;stroke-width:1.2;opacity:.5}
+</style>
+<defs><marker id="ds-arr" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto"><path class="ds-head" d="M0 0L8 4L0 8Z"/></marker></defs>
+<rect class="ds-bound" x="14" y="36" width="480" height="236" rx="8"/>
+<text class="ds-ion" x="30" y="58">this computer, cpu only</text>
+<rect class="ds-node" x="35" y="110" width="90" height="40" rx="6"/>
+<text class="ds-t" x="80" y="134" text-anchor="middle">photos</text>
+<rect class="ds-node" x="35" y="190" width="90" height="40" rx="6"/>
+<text class="ds-t" x="80" y="214" text-anchor="middle">documents</text>
+<rect class="ds-node" x="153" y="110" width="90" height="40" rx="6"/>
+<text class="ds-t" x="198" y="134" text-anchor="middle">clip</text>
+<rect class="ds-node" x="153" y="190" width="90" height="40" rx="6"/>
+<text class="ds-t" x="198" y="214" text-anchor="middle">ollama</text>
+<path class="ds-q" d="M280 140A42 8 0 0 1 364 140V200A42 8 0 0 1 280 200Z"/>
+<path class="ds-rim" d="M280 140A42 8 0 0 0 364 140"/>
+<text class="ds-t" x="322" y="174" text-anchor="middle">qdrant</text>
+<rect class="ds-node" x="400" y="150" width="80" height="40" rx="6"/>
+<text class="ds-t" x="440" y="174" text-anchor="middle">query</text>
+<path class="ds-link" d="M125 130H153" marker-end="url(#ds-arr)"/>
+<path class="ds-link" d="M125 210H153" marker-end="url(#ds-arr)"/>
+<path class="ds-link" d="M243 130C262 130 262 160 280 160" marker-end="url(#ds-arr)"/>
+<path class="ds-link" d="M243 210C262 210 262 180 280 180" marker-end="url(#ds-arr)"/>
+<path class="ds-link" d="M364 170H400" marker-end="url(#ds-arr)"/>
+<g class="ds-cloud"><path d="M536 170A12 12 0 0 1 534 149A18 18 0 0 1 564 138A18 18 0 0 1 594 150A11 11 0 0 1 592 170Z"/><path d="M520 124L610 184"/></g>
+<text class="ds-muted" x="566" y="200" text-anchor="middle"><tspan x="566">nothing</tspan><tspan x="566" dy="16">uploaded</tspan></text>
+</svg>

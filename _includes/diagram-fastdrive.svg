@@ -1,0 +1,43 @@
+<svg class="diagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300" role="img">
+<title>Two versions of a file split into content-defined chunks. Chunks they share are stored once.</title>
+<style>
+.diagram text{font-family:"Martian Mono", ui-monospace, monospace;font-size:12px}
+.diagram .fd-tag{fill:#96A0C3}
+.diagram .fd-chunk{fill:#0C1433;stroke:#22336B;stroke-width:1}
+.diagram .fd-diff{fill:#0C1433;stroke:#8FDCEB;stroke-width:1.4}
+.diagram .fd-block{fill:#0C1433;stroke:#8E7444;stroke-width:1}
+.diagram .fd-hex{fill:#E9ECF5}
+.diagram .fd-link{fill:none;stroke:#8E7444;stroke-width:1}
+</style>
+<text class="fd-tag" x="16" y="64">v1</text>
+<text class="fd-tag" x="16" y="244">v2</text>
+<text class="fd-tag" x="16" y="164">store</text>
+<text class="fd-tag" x="16" y="182">blake3</text>
+<path class="fd-link" d="M119 80C119 110 113 110 113 140M209 80C209 110 188 110 188 140M292 80C292 110 263 110 263 140M372 80C372 110 338 110 338 140M464 80C464 110 488 110 488 140M552 80C552 110 563 110 563 140M119 220C119 200 113 200 113 180M209 220C209 200 188 200 188 180M292 220C292 200 263 200 263 180M372 220C372 200 413 200 413 180M464 220C464 200 488 200 488 180M552 220C552 200 563 200 563 180"/>
+<rect class="fd-chunk" x="80" y="40" width="78" height="40"/>
+<rect class="fd-chunk" x="158" y="40" width="102" height="40"/>
+<rect class="fd-chunk" x="260" y="40" width="64" height="40"/>
+<rect class="fd-chunk" x="324" y="40" width="96" height="40"/>
+<rect class="fd-chunk" x="420" y="40" width="88" height="40"/>
+<rect class="fd-chunk" x="508" y="40" width="88" height="40"/>
+<rect class="fd-chunk" x="80" y="220" width="78" height="40"/>
+<rect class="fd-chunk" x="158" y="220" width="102" height="40"/>
+<rect class="fd-chunk" x="260" y="220" width="64" height="40"/>
+<rect class="fd-diff" x="324" y="220" width="96" height="40"/>
+<rect class="fd-chunk" x="420" y="220" width="88" height="40"/>
+<rect class="fd-chunk" x="508" y="220" width="88" height="40"/>
+<rect class="fd-block" x="80" y="140" width="66" height="40"/>
+<text class="fd-hex" x="113" y="164" text-anchor="middle">493c</text>
+<rect class="fd-block" x="155" y="140" width="66" height="40"/>
+<text class="fd-hex" x="188" y="164" text-anchor="middle">da5d</text>
+<rect class="fd-block" x="230" y="140" width="66" height="40"/>
+<text class="fd-hex" x="263" y="164" text-anchor="middle">a9df</text>
+<rect class="fd-block" x="305" y="140" width="66" height="40"/>
+<text class="fd-hex" x="338" y="164" text-anchor="middle">104b</text>
+<rect class="fd-diff" x="380" y="140" width="66" height="40"/>
+<text class="fd-hex" x="413" y="164" text-anchor="middle">12ad</text>
+<rect class="fd-block" x="455" y="140" width="66" height="40"/>
+<text class="fd-hex" x="488" y="164" text-anchor="middle">9998</text>
+<rect class="fd-block" x="530" y="140" width="66" height="40"/>
+<text class="fd-hex" x="563" y="164" text-anchor="middle">5d30</text>
+</svg>

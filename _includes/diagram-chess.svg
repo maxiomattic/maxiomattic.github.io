@@ -1,0 +1,41 @@
+<svg class="diagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300" role="img">
+<title>A chessboard feeding a small neural network that scores the position.</title>
+<style>
+.diagram text{font-family:"Martian Mono", ui-monospace, monospace;font-size:12px}
+.diagram .ch-board{fill:#0C1433}
+.diagram .ch-dark{fill:#22336B}
+.diagram .ch-frame{fill:none;stroke:#8E7444;stroke-width:1}
+.diagram .ch-c{fill:#D9B26A}
+.diagram .ch-s{fill:#8E7444}
+.diagram .ch-edge{fill:none;stroke:#22336B;stroke-width:1}
+.diagram .ch-node{fill:#0C1433;stroke:#E9ECF5;stroke-width:1}
+.diagram .ch-out{fill:#D9B26A;stroke:#D9B26A;stroke-width:1}
+.diagram .ch-eval{fill:#D9B26A}
+.diagram .ch-link{fill:none;stroke:#8E7444;stroke-width:1.2}
+.diagram .ch-head{fill:#8E7444}
+</style>
+<defs><marker id="ch-arr" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto"><path class="ch-head" d="M0 0L8 4L0 8Z"/></marker></defs>
+<rect class="ch-frame" x="14" y="24" width="252" height="252"/>
+<rect class="ch-board" x="20" y="30" width="240" height="240"/>
+<path class="ch-dark" d="M50 30h30v30h-30zM110 30h30v30h-30zM170 30h30v30h-30zM230 30h30v30h-30zM20 60h30v30h-30zM80 60h30v30h-30zM140 60h30v30h-30zM200 60h30v30h-30zM50 90h30v30h-30zM110 90h30v30h-30zM170 90h30v30h-30zM230 90h30v30h-30zM20 120h30v30h-30zM80 120h30v30h-30zM140 120h30v30h-30zM200 120h30v30h-30zM50 150h30v30h-30zM110 150h30v30h-30zM170 150h30v30h-30zM230 150h30v30h-30zM20 180h30v30h-30zM80 180h30v30h-30zM140 180h30v30h-30zM200 180h30v30h-30zM50 210h30v30h-30zM110 210h30v30h-30zM170 210h30v30h-30zM230 210h30v30h-30zM20 240h30v30h-30zM80 240h30v30h-30zM140 240h30v30h-30zM200 240h30v30h-30z"/>
+<rect class="ch-s" x="58" y="38" width="14" height="14"/>
+<circle class="ch-c" cx="215" cy="75" r="8"/>
+<rect class="ch-s" x="118" y="128" width="14" height="14"/>
+<circle class="ch-c" cx="35" cy="165" r="8"/>
+<circle class="ch-c" cx="185" cy="195" r="8"/>
+<rect class="ch-s" x="88" y="218" width="14" height="14"/>
+<path class="ch-link" d="M270 150H326" marker-end="url(#ch-arr)"/>
+<path class="ch-edge" d="M340 75L456 60M340 75L456 96M340 75L456 132M340 75L456 168M340 75L456 204M340 75L456 240M340 125L456 60M340 125L456 96M340 125L456 132M340 125L456 168M340 125L456 204M340 125L456 240M340 175L456 60M340 175L456 96M340 175L456 132M340 175L456 168M340 175L456 204M340 175L456 240M340 225L456 60M340 225L456 96M340 225L456 132M340 225L456 168M340 225L456 204M340 225L456 240M456 60L572 150M456 96L572 150M456 132L572 150M456 168L572 150M456 204L572 150M456 240L572 150"/>
+<circle class="ch-node" cx="340" cy="75" r="6"/>
+<circle class="ch-node" cx="340" cy="125" r="6"/>
+<circle class="ch-node" cx="340" cy="175" r="6"/>
+<circle class="ch-node" cx="340" cy="225" r="6"/>
+<circle class="ch-node" cx="456" cy="60" r="6"/>
+<circle class="ch-node" cx="456" cy="96" r="6"/>
+<circle class="ch-node" cx="456" cy="132" r="6"/>
+<circle class="ch-node" cx="456" cy="168" r="6"/>
+<circle class="ch-node" cx="456" cy="204" r="6"/>
+<circle class="ch-node" cx="456" cy="240" r="6"/>
+<circle class="ch-out" cx="572" cy="150" r="8"/>
+<text class="ch-eval" x="572" y="186" text-anchor="middle">eval</text>
+</svg>

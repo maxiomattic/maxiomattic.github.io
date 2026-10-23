@@ -1,0 +1,11 @@
+<header class="masthead">
+  <a class="wordmark" href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>
+    <svg class="wordmark-mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><circle cx="16" cy="16" r="4.5" fill="currentColor"/><circle cx="16" cy="16" r="7.5" fill="none" stroke="currentColor" stroke-width="1.2"/><ellipse cx="16" cy="16" rx="14" ry="5.5" transform="rotate(-16 16 16)" fill="none" stroke="currentColor" stroke-width="1" opacity=".6"/></svg>
+    <span>Noah Hamm</span>
+  </a>
+  <nav class="nav" aria-label="Site">
+    <a href="{{ '/#projects' | relative_url }}">Projects</a>
+    <a href="{{ '/writing/' | relative_url }}"{% if page.url contains '/writing/' %} aria-current="page"{% endif %}>Writing</a>
+    <a href="{{ '/about/' | relative_url }}"{% if page.url == '/about/' %} aria-current="page"{% endif %}>About</a>
+  </nav>
+</header>

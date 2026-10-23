@@ -1,0 +1,20 @@
+---
+layout: default
+---
+{% assign words = content | strip_html | number_of_words %}
+<main id="content" class="page">
+  <article class="post">
+    <header class="post-head">
+      <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%B %-d, %Y' }}</time><span>{{ words | divided_by: 230 | plus: 1 }} min read</span></p>
+      <h1>{{ page.title }}</h1>
+      {% if page.description %}<p class="lede">{{ page.description }}</p>{% endif %}
+    </header>
+    <div class="prose">
+      {{ content }}
+    </div>
+    <footer class="post-foot">
+      <a href="{{ '/writing/' | relative_url }}">All writing</a>
+      <a href="{{ '/feed.xml' | relative_url }}">Subscribe with RSS</a>
+    </footer>
+  </article>
+</main>

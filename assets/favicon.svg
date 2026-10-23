@@ -1,0 +1,14 @@
+<svg class="favicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+<style>
+.favicon .bg{fill:#060A1C}
+.favicon .orb{fill:none;stroke:#8E7444;stroke-width:3.5}
+.favicon .disc{fill:#D9B26A}
+.favicon .ring{fill:none;stroke:#D9B26A;stroke-width:3.5}
+.favicon .dot{fill:#E9ECF5}
+</style>
+<rect class="bg" width="64" height="64" rx="12"/>
+<ellipse class="orb" cx="32" cy="32" rx="27" ry="15" transform="rotate(-20 32 32)"/>
+<circle class="ring" cx="32" cy="32" r="11"/>
+<circle class="disc" cx="32" cy="32" r="7"/>
+<circle class="dot" cx="40.2" cy="15.2" r="2.8"/>
+</svg>

@@ -1,0 +1,41 @@
+<svg class="orrery" xmlns="http://www.w3.org/2000/svg" viewBox="-400 -400 800 800" aria-hidden="true" focusable="false">
+<style>
+.orrery .g0{stop-color:#D9B26A;stop-opacity:.35}
+.orrery .g1{stop-color:#D9B26A;stop-opacity:0}
+.orrery .grat *{fill:none;stroke:#22336B;stroke-width:.6;vector-effect:non-scaling-stroke}
+.orrery .grat circle{stroke-dasharray:2 6}
+.orrery .disc{fill:#D9B26A}
+.orrery .ring{fill:none;stroke:#D9B26A;stroke-width:1.2}
+.orrery .rays{fill:none;stroke:#D9B26A;stroke-width:1.4;stroke-linecap:round}
+.orrery .orbit{fill:none;stroke:#8E7444;stroke-width:1;vector-effect:non-scaling-stroke}
+.orrery .dashed{stroke-dasharray:1 5}
+.orrery .comet{fill:none;stroke:#8FDCEB;stroke-width:1.2;stroke-linecap:round;opacity:.7}
+.orrery .body{fill:#E9ECF5}
+.orrery .ion{fill:none;stroke:#8FDCEB;stroke-width:1;vector-effect:non-scaling-stroke}
+.orrery .bez{fill:none;stroke:#D9B26A;stroke-width:1;vector-effect:non-scaling-stroke}
+.orrery .mk{fill:none;stroke:#8E7444;stroke-width:1;vector-effect:non-scaling-stroke}
+.orrery .mj{fill:none;stroke:#D9B26A;stroke-width:1;vector-effect:non-scaling-stroke}
+.orrery text{font-family:"Martian Mono", ui-monospace, monospace}
+.orrery .lbl{fill:#96A0C3;font-size:11px;stroke:#060A1C;stroke-width:3;paint-order:stroke}
+.orrery .tk{fill:#96A0C3;font-size:9px;stroke:#060A1C;stroke-width:3;paint-order:stroke}
+@media (prefers-reduced-motion: no-preference){
+@keyframes orrery-pulse{0%,100%{opacity:.8}50%{opacity:1}}
+.orrery .glow{animation:orrery-pulse 6s ease-in-out infinite}
+}
+</style>
+<defs><radialGradient id="orr-glow" cx="0" cy="0" r="170" gradientUnits="userSpaceOnUse"><stop class="g0" offset="0"/><stop class="g1" offset="1"/></radialGradient></defs>
+<circle class="glow" r="170" fill="url(#orr-glow)"/>
+<g class="grat"><circle r="120"/><circle r="200"/><circle r="280"/><circle r="360"/><path d="M0 -100L0 -390M50 -86.6L195 -337.7M86.6 -50L337.7 -195M100 0L390 0M86.6 50L337.7 195M50 86.6L195 337.7M0 100L0 390M-50 86.6L-195 337.7M-86.6 50L-337.7 195M-100 0L-390 0M-86.6 -50L-337.7 -195M-50 -86.6L-195 -337.7"/></g>
+<text class="tk" x="0" y="-357" text-anchor="middle">000</text>
+<text class="tk" x="360" y="3" text-anchor="middle">090</text>
+<text class="tk" x="0" y="363" text-anchor="middle">180</text>
+<text class="tk" x="-360" y="3" text-anchor="middle">270</text>
+<g class="sun"><circle class="disc" r="38"/><circle class="ring" r="50"/><circle class="ring" r="60"/><path class="rays" d="M0 -68L0 -96M13.3 -66.7L16 -80.4M26 -62.8L36.7 -88.7M37.8 -56.5L45.6 -68.2M48.1 -48.1L67.9 -67.9M56.5 -37.8L68.2 -45.6M62.8 -26L88.7 -36.7M66.7 -13.3L80.4 -16M68 0L96 0M66.7 13.3L80.4 16M62.8 26L88.7 36.7M56.5 37.8L68.2 45.6M48.1 48.1L67.9 67.9M37.8 56.5L45.6 68.2M26 62.8L36.7 88.7M13.3 66.7L16 80.4M0 68L0 96M-13.3 66.7L-16 80.4M-26 62.8L-36.7 88.7M-37.8 56.5L-45.6 68.2M-48.1 48.1L-67.9 67.9M-56.5 37.8L-68.2 45.6M-62.8 26L-88.7 36.7M-66.7 13.3L-80.4 16M-68 0L-96 0M-66.7 -13.3L-80.4 -16M-62.8 -26L-88.7 -36.7M-56.5 -37.8L-68.2 -45.6M-48.1 -48.1L-67.9 -67.9M-37.8 -56.5L-45.6 -68.2M-26 -62.8L-36.7 -88.7M-13.3 -66.7L-16 -80.4"/></g>
+<g transform="rotate(-16)"><path id="orr-o1" class="orbit" d="M-140 0A140 58.8 0 1 0 140 0A140 58.8 0 1 0 -140 0"/><g><animateMotion dur="70s" begin="-17s" repeatCount="indefinite" rotate="0"><mpath href="#orr-o1"/></animateMotion><circle class="body" r="4"/><text class="lbl" transform="rotate(16)" x="12" y="4">lab</text></g></g>
+<g transform="rotate(-16)"><path id="orr-o2" class="orbit" d="M-205 0A205 86.1 0 1 0 205 0A205 86.1 0 1 0 -205 0"/><g><animateMotion dur="110s" begin="-63s" repeatCount="indefinite" rotate="0"><mpath href="#orr-o2"/></animateMotion><circle class="body" r="4"/><circle class="ion" r="9"/><text class="lbl" transform="rotate(16)" x="12" y="4">careride</text></g></g>
+<g transform="rotate(-16)"><path id="orr-o3" class="orbit" d="M-270 0A270 113.4 0 1 0 270 0A270 113.4 0 1 0 -270 0"/><path class="comet" stroke-dasharray="24 8" d="M-259.5 -31.3A270 113.4 0 0 1 -37.6 -112.3"/><g><animateMotion dur="160s" begin="-40s" repeatCount="indefinite" rotate="0"><mpath href="#orr-o3"/></animateMotion><circle class="body" r="5"/><text class="lbl" transform="rotate(16)" x="12" y="4">fastdrive</text></g></g>
+<g transform="rotate(-16)"><path id="orr-o4" class="orbit dashed" d="M-340 0A340 142.8 0 1 0 340 0A340 142.8 0 1 0 -340 0"/><g><animateMotion dur="240s" begin="-150s" repeatCount="indefinite" rotate="0"><mpath href="#orr-o4"/></animateMotion><circle class="body" r="5"/><text class="lbl" transform="rotate(16)" x="12" y="4">local-search</text></g></g>
+<circle class="bez" r="392"/>
+<path class="mk" d="M34.2 -390.5L33.6 -384.5M68.1 -386L67 -380.1M101.5 -378.6L99.9 -372.8M134.1 -368.4L132 -362.7M165.7 -355.3L163.1 -349.8M224.8 -321.1L221.4 -316.2M252 -300.3L248.1 -295.7M277.2 -277.2L272.9 -272.9M300.3 -252L295.7 -248.1M321.1 -224.8L316.2 -221.4M355.3 -165.7L349.8 -163.1M368.4 -134.1L362.7 -132M378.6 -101.5L372.8 -99.9M386 -68.1L380.1 -67M390.5 -34.2L384.5 -33.6M390.5 34.2L384.5 33.6M386 68.1L380.1 67M378.6 101.5L372.8 99.9M368.4 134.1L362.7 132M355.3 165.7L349.8 163.1M321.1 224.8L316.2 221.4M300.3 252L295.7 248.1M277.2 277.2L272.9 272.9M252 300.3L248.1 295.7M224.8 321.1L221.4 316.2M165.7 355.3L163.1 349.8M134.1 368.4L132 362.7M101.5 378.6L99.9 372.8M68.1 386L67 380.1M34.2 390.5L33.6 384.5M-34.2 390.5L-33.6 384.5M-68.1 386L-67 380.1M-101.5 378.6L-99.9 372.8M-134.1 368.4L-132 362.7M-165.7 355.3L-163.1 349.8M-224.8 321.1L-221.4 316.2M-252 300.3L-248.1 295.7M-277.2 277.2L-272.9 272.9M-300.3 252L-295.7 248.1M-321.1 224.8L-316.2 221.4M-355.3 165.7L-349.8 163.1M-368.4 134.1L-362.7 132M-378.6 101.5L-372.8 99.9M-386 68.1L-380.1 67M-390.5 34.2L-384.5 33.6M-390.5 -34.2L-384.5 -33.6M-386 -68.1L-380.1 -67M-378.6 -101.5L-372.8 -99.9M-368.4 -134.1L-362.7 -132M-355.3 -165.7L-349.8 -163.1M-321.1 -224.8L-316.2 -221.4M-300.3 -252L-295.7 -248.1M-277.2 -277.2L-272.9 -272.9M-252 -300.3L-248.1 -295.7M-224.8 -321.1L-221.4 -316.2M-165.7 -355.3L-163.1 -349.8M-134.1 -368.4L-132 -362.7M-101.5 -378.6L-99.9 -372.8M-68.1 -386L-67 -380.1M-34.2 -390.5L-33.6 -384.5"/>
+<path class="mj" d="M0 -392L0 -380M196 -339.5L190 -329.1M339.5 -196L329.1 -190M392 0L380 0M339.5 196L329.1 190M196 339.5L190 329.1M0 392L0 380M-196 339.5L-190 329.1M-339.5 196L-329.1 190M-392 0L-380 0M-339.5 -196L-329.1 -190M-196 -339.5L-190 -329.1"/>
+</svg>
